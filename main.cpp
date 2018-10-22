@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     //test-emulator.exe [INPUT IMAGE] [PERCENT OF "BUGS"] [OUTPUT FOLDER]
 
     QString dstFolder(argv[3]);
-    QString dstImgFileName(dstFolder + "/img.jpg");
+    QString dstImgFileName(dstFolder + "/img.png");
     QString dstTxtFileName(dstFolder + "/stat.txt");
 
     QFile::remove(dstImgFileName);
