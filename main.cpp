@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
     int randValue = QRandomGenerator::global()->generate() % 100;
     if(randValue < bugPercent) {
       //Generate bug
-      randValue = QRandomGenerator::global()->generate() % 2;
+      randValue = QRandomGenerator::global()->generate() % 4;
       if(randValue == 0) {
           return -1;
       } else {
