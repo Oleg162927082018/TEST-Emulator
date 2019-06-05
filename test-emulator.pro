@@ -1,7 +1,7 @@
-VERSION = 1.0.0.0
+VERSION = 0.1.0.0
 QMAKE_TARGET_PRODUCT = Test Emulator
 QMAKE_TARGET_DESCRIPTION = Test emulator for testing Total Test Integrator
-QMAKE_TARGET_COPYRIGHT = Copyright\xA9 Oleg Kopyev 2016-2018
+QMAKE_TARGET_COPYRIGHT = Copyright\xA9 Oleg Kopyev 2018-2019
 
 QT += gui
 
@@ -21,8 +21,3 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp
-
-# Default rules for deployment.
-qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /opt/$${TARGET}/bin
-!isEmpty(target.path): INSTALLS += target
